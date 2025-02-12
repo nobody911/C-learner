@@ -8,7 +8,7 @@ struct Player
 
 int main()
 {
-    // struct Player player1, player2;  
+    // struct Player player1, player2;  w
 
     strcpy(player1.name, "Bro");
     player1.score = 4;

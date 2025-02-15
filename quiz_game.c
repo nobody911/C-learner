@@ -24,7 +24,7 @@ int main()
         scanf("%c", &guess);
         scanf("%c");
         guess = toupper(guess);
-        if(guess==answer[i])
+        if(answer[i]==guess)
         {
             printf("Correct!\n");
             score++;

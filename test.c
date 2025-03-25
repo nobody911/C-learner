@@ -1,12 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int j=1;
-    for(int i=1; i<=10; i++)
+    for(int i=1; i<=4; i++)
     {
-        for(; j<=i*10; j++)
-            printf("%d ", j);
+        for(int j=1; j<=4; j++)
+        {
+            if(j<=4-i)
+                printf(" ");
+            }
+            for(int k=1; k<=4; k++)
+                printf("*");
         printf("\n");
     }
-    return 0;
+return 0;
 }

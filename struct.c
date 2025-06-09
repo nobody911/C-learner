@@ -13,7 +13,7 @@ int main()
     strcpy(player1.name, "Bro");
     player1.score = 4;
     
-    strcpy(player2.name, "Mulla");
+    strcpy(player2.name, "Lulla");
     player2.score = 6;
 
     printf("%s has scored %d\n", player1.name, player1.score);

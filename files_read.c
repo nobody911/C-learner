@@ -1,14 +1,16 @@
 #include <stdio.h>
+#define SIZE 1024
 int main()
 {
-    FILE *pF = fopen("new.txt", "r");
-    char buffer[255];
+    FILE *pF = fopen("test.txt", "r");
+    char buffer[SIZE];
     if(pF == NULL)
-        printf("Unable to open file");
-    else
     {
-        while(fgets(buffer, 255, pF) != NULL)
-            printf("%s", buffer);
-    }    
+        printf("Cannot locate file...");
+        return 1;
+    }
+    while(fgets(buffer, sizeof(buffer), pF) != NULL)
+        printf("%s", buffer);
+    fclose(pF);
     return 0;
 }
